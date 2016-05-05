@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scrollToFixed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            margin-bottom: 100px;
+        }
+        h1,
+        h3 {
+            margin: 30px;
+            text-align: center;
+        }
+        .nav {
+            height: 50px;
+            background: #eee;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc; 
+        }
+        .menu {
+            margin: 0 auto;
+            width: 1000px;
+            height: 100%;       
+        }
+        .menu ul {
+            height: 100%;
+        }
+        .li-item {
+            display: inline-block;
+            height: 100%;
+            cursor: pointer;
+        }
+        .li-item a {
+            padding: 0 15px;
+            line-height: 50px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .li-item:hover {
+            background: #666;
+        }
+        .main {
+            margin: 0 auto;
+            width: 1000px;
+            font-family: "microsoft yahei",Arial;
+        }
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+        .body {
+            padding: 20px 0;   
+            color: #888;
+        }
+        .footer {
+            text-align: right;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>scrollToFixed</h1>
+    </header>
+    <section>
+        <nav class="nav">
+            <div class="menu">
+                <ul>
+                    <li class="li-item"><a href="#">首页</a></li class="li-item">
+                    <li class="li-item"><a href="#">新闻</a></li class="li-item">
+                    <li class="li-item"><a href="#">手机</a></li class="li-item">
+                    <li class="li-item"><a href="#">产品</a></li class="li-item">
+                    <li class="li-item"><a href="#">运营</a></li>
+                </ul>    
+            </div>
+        </nav>
+        <h3>社区文章</h3>
+        <div class="main">
+            <article>
+                <article>
+                    <div class="header">电子邮件叕爆出被黑，这次受害者有2.7亿</div>
+                    <div class="body">超过2.7亿电子邮件被黑，包括通过Gmail、Hotmail和雅虎，而用户的信息正在俄罗斯数字犯罪团伙之间流传。</div>
+                    <div class="footer">洁颖 2016 / 05 / 05 18:24</div>
+                </article>
+                <article>
+                    <div class="header">谷歌VR负责人谈VR战略：移动、低成本才是正道</div>
+                    <div class="body">在许多方面上Google Cardboard是做得对的：移动，舒适，可接近性和低成本。所以，Google Cardboard当然是要依靠智能手机才能发挥用途。</div>
+                    <div class="footer">晓桦 2016 / 05 / 05 18:00</div>
+                </article>
+                <article>
+                    <div class="header">写给创业者和产品汪——关于“需求”你应该了解这些</div>
+                    <div class="body">真正了解自己的需求，确立自己的目标，然后落实自己的需求，这是做产品的必由之路。</div>
+                    <div class="footer">人人都是产品经理 2016 / 05 / 05 19:03</div>
+                </article>
+                <article>
+                    <div class="header">电子邮件叕爆出被黑，这次受害者有2.7亿</div>
+                    <div class="body">超过2.7亿电子邮件被黑，包括通过Gmail、Hotmail和雅虎，而用户的信息正在俄罗斯数字犯罪团伙之间流传。</div>
+                    <div class="footer">洁颖 2016 / 05 / 05 18:24</div>
+                </article>
+                <article>
+                    <div class="header">谷歌VR负责人谈VR战略：移动、低成本才是正道</div>
+                    <div class="body">在许多方面上Google Cardboard是做得对的：移动，舒适，可接近性和低成本。所以，Google Cardboard当然是要依靠智能手机才能发挥用途。</div>
+                    <div class="footer">晓桦 2016 / 05 / 05 18:00</div>
+                </article>
+                <article>
+                    <div class="header">写给创业者和产品汪——关于“需求”你应该了解这些</div>
+                    <div class="body">真正了解自己的需求，确立自己的目标，然后落实自己的需求，这是做产品的必由之路。</div>
+                    <div class="footer">人人都是产品经理 2016 / 05 / 05 19:03</div>
+                </article>
+                <article>
+                    <div class="header">电子邮件叕爆出被黑，这次受害者有2.7亿</div>
+                    <div class="body">超过2.7亿电子邮件被黑，包括通过Gmail、Hotmail和雅虎，而用户的信息正在俄罗斯数字犯罪团伙之间流传。</div>
+                    <div class="footer">洁颖 2016 / 05 / 05 18:24</div>
+                </article>
+                <article>
+                    <div class="header">谷歌VR负责人谈VR战略：移动、低成本才是正道</div>
+                    <div class="body">在许多方面上Google Cardboard是做得对的：移动，舒适，可接近性和低成本。所以，Google Cardboard当然是要依靠智能手机才能发挥用途。</div>
+                    <div class="footer">晓桦 2016 / 05 / 05 18:00</div>
+                </article>
+                <article>
+                    <div class="header">写给创业者和产品汪——关于“需求”你应该了解这些</div>
+                    <div class="body">真正了解自己的需求，确立自己的目标，然后落实自己的需求，这是做产品的必由之路。</div>
+                    <div class="footer">人人都是产品经理 2016 / 05 / 05 19:03</div>
+                </article>
+                <article>
+                    <div class="header">电子邮件叕爆出被黑，这次受害者有2.7亿</div>
+                    <div class="body">超过2.7亿电子邮件被黑，包括通过Gmail、Hotmail和雅虎，而用户的信息正在俄罗斯数字犯罪团伙之间流传。</div>
+                    <div class="footer">洁颖 2016 / 05 / 05 18:24</div>
+                </article>
+                <article>
+                    <div class="header">谷歌VR负责人谈VR战略：移动、低成本才是正道</div>
+                    <div class="body">在许多方面上Google Cardboard是做得对的：移动，舒适，可接近性和低成本。所以，Google Cardboard当然是要依靠智能手机才能发挥用途。</div>
+                    <div class="footer">晓桦 2016 / 05 / 05 18:00</div>
+                </article>
+                <article>
+                    <div class="header">写给创业者和产品汪——关于“需求”你应该了解这些</div>
+                    <div class="body">真正了解自己的需求，确立自己的目标，然后落实自己的需求，这是做产品的必由之路。</div>
+                    <div class="footer">人人都是产品经理 2016 / 05 / 05 19:03</div>
+                </article>
+            </article>
+        </div>
+        <aside></aside>
+    </section>
+    
+    <script src="./jquery.js"></script>
+    <script src="./jquery.scrolltofixed.js"></script>
+    <script>
+        $('.nav').scrollToFixed({top: 0});
+    </script>
+</body>
+</html>
